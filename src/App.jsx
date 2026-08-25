@@ -5,6 +5,7 @@ function App() {
     <>
       <Student name="Spongebob" age={12} isStudent={true}/>
       <Student name="Patrick" age={15} isStudent={false}/>
+      <Student/>
     </>
   );
 }

@@ -15,6 +15,13 @@ Student.proptypes = {
     name: PropTypes.string,
     age: PropTypes.number,
     isStudent: PropTypes.bool,
-} 
+}
+
+// tu zasa nastavujeme defaultne hodnoty ak niekto nieco nezada ale policko bude prazdne tak sa tam da prednastavena hodnota
+Student.defaultProps ={
+   name: "Guest",
+   age: 0, 
+   isStudent:false,
+}
 
 export default Student
