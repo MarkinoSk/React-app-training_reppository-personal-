@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 function Greeting(props) {
     // if (props.isLoggedIn) {
@@ -13,6 +14,15 @@ function Greeting(props) {
     const LogIn = <h2>Please Log in</h2>
 
     return(props.isLoggedIn ? Welcome : LogIn );
+}
+
+Greeting.prototypes = {
+    isLoggedIn = bool,
+    username = string,
+}
+Greeting.deafaultProps = {
+    isLoggedIn = false,
+    username = guest,
 }
 
 export default Greeting
