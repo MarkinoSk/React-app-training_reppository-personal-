@@ -22,7 +22,7 @@ Greeting.prototypes = {
 }
 Greeting.deafaultProps = {
     isLoggedIn = false,
-    username = guest,
+    username = "guest",
 }
 
 export default Greeting
